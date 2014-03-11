@@ -16,8 +16,16 @@ public class Log {
 	public static void debug(String message) {
 		sLog.debug(message);
 	}
-	
+
+	public static void debug(String message, Object... args) {
+		sLog.debug(String.format(message, args));
+	}
+
 	public static void error(String message) {
 		sLog.error(message);
+	}
+	
+	public static void error(String message, Object... args) {
+		sLog.error(String.format(message, args));
 	}
 }
