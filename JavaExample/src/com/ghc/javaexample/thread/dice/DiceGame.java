@@ -37,7 +37,7 @@ public class DiceGame {
 		if (exist) {
 			Log.error(String.format("Gamer %s existed!", gamer.name()));
 		} else {
-			mPlayers.add(new Player(gamer));
+			
 		}
 	}
 

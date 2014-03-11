@@ -5,7 +5,7 @@
  */
 package com.ghc.javaexample;
 
-import com.ghc.javaexample.localization.LocalizationApplication;
+import com.ghc.javaexample.concurrency.SumNumber;
 
 /**
  * 
@@ -18,6 +18,6 @@ public class Application {
 	}
 
 	private static IApplication getApplication() {
-		return new LocalizationApplication();
+		return new SumNumber(1_000_000_000L);
 	}
 }
